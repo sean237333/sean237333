@@ -10,6 +10,13 @@
 
 ### Projects
 
+**NAFNet 기반 스마트폰 렌즈 오염 복원** (2026.03 – 06)
+딥러닝프로그래밍 · 개인 프로젝트 · PyTorch (BasicSR)
+
+- NAFNet에 학습 기법 7가지를 차례로 적용하고, 통제 실험으로 SSIM 향상의 원인이 FFT 손실이 아닌 AMP였음을 바로잡음
+- 대형 패치는 쉬운 샘플에서, 교차 태스크 사전학습은 어려운 샘플에서 효과가 큼을 관찰하고 5모델 앙상블로 PSNR 23.70 dB 달성 (가장 어려운 구간은 미개선, 원인 분석 포함)
+- 🔗 [프로젝트 정리와 보고서](https://github.com/sean237333/nafnet-dirty-lens-restoration)
+
 **QuantPrune-X: 모델 경량화가 백도어를 활성화하는 조건 분석** (2026.10 – 진행 중)
 온디바이스 AI 수업 · 5인 팀 · 실험 파이프라인과 ResNet-18 분석 담당 · PyTorch
 
@@ -18,12 +25,13 @@
 - ResNet-18에서 프루닝만으로도 백도어가 활성화되고(65% → 70%에서 공격 성공률 27.5% → 95.5%), layer2를 먼저 프루닝하면 INT4 양자화 백도어가 막힘을 확인
 - 🔗 [ResNet-18 분석 리포트](https://github.com/zobbo0408/QuantPrune-X/tree/feat/experiment-pipeline/analysis/resnet18/report) · [팀 저장소](https://github.com/zobbo0408/QuantPrune-X)
 
-**NAFNet 기반 스마트폰 렌즈 오염 복원** (2026.03 – 06)
-딥러닝프로그래밍 · 개인 프로젝트 · PyTorch (BasicSR)
+**ROS 2 로봇 프로그래밍 실습** (2026.03 – 06)
+로봇프로그래밍 · ROS 2 Jazzy, Python (rclpy), Webots
 
-- NAFNet에 학습 기법 7가지를 차례로 적용하고, 통제 실험으로 SSIM 향상의 원인이 FFT 손실이 아닌 AMP였음을 바로잡음
-- 대형 패치는 쉬운 샘플에서, 교차 태스크 사전학습은 어려운 샘플에서 효과가 큼을 관찰하고 5모델 앙상블로 PSNR 23.70 dB 달성 (가장 어려운 구간은 미개선, 원인 분석 포함)
-- 🔗 [프로젝트 정리와 보고서](https://github.com/sean237333/nafnet-dirty-lens-restoration)
+- Topic·Parameter·Launch·Service 통신 패키지 6개를 직접 구현 (사용자 정의 서비스 타입, 실행 중 파라미터 변경)
+- 수업 제공 Webots 차동구동 로봇 위에서 odom 피드백 360° 회전, LiDAR 장애물 감지 후 후진, 토픽 실시간 검증 노드 작성
+- Cartographer로 지도를 작성하고, 저장한 지도로 Nav2 자율 주행 수행
+- 🔗 [ros2-robot-programming](https://github.com/sean237333/ros2-robot-programming)
 
 **Amazon 상품 Top-20 추천** (2026.11 – 진행 중)
 데이터사이언스 수업 Kaggle 대회 · 4인 팀 · Python, XGBoost, CatBoost, PyTorch
@@ -32,13 +40,8 @@
 - 멀티모달 추천 논문 FREEDOM(ACM MM 2023)의 핵심 구조를 대회 데이터에 맞게 경량 구현해 랭커 feature로 적용
 - 대회 규칙에 따라 코드는 마감(2026.12.04) 이후 공개 예정
 
-**ROS2 기반 자율이동 로봇 실습** (2026.03 – 06)
-로봇프로그래밍 · ROS2, Webots
-
-- Webots와 ROS2로 로봇 모델링(URDF/xacro), Cartographer SLAM 지도 작성, AMCL 위치 추정, Nav2 자율 주행까지 실습
-
 ---
 
 ### Skills
 
-Python · PyTorch · ROS2 · Webots · XGBoost · CatBoost · Git
+Python · PyTorch · ROS 2 · Webots · XGBoost · CatBoost · Git
