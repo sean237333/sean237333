@@ -28,7 +28,7 @@
 **ROS 2 로봇 프로그래밍 실습** (2026.03 – 06)
 로봇프로그래밍 · ROS 2 Jazzy, Python (rclpy), Webots
 
-- Topic·Parameter·Launch·Service 통신 패키지 6개를 직접 구현 (사용자 정의 서비스 타입, 실행 중 파라미터 변경)
+- Topic·Parameter·Launch·Service 통신 패키지 5개를 직접 구현 (사용자 정의 서비스 타입, 실행 중 파라미터 변경)
 - 수업 제공 Webots 차동구동 로봇 위에서 odom 피드백 360° 회전, LiDAR 장애물 감지 후 후진, 토픽 실시간 검증 노드 작성
 - Cartographer로 지도를 작성하고, 저장한 지도로 Nav2 자율 주행 수행
 - 🔗 [ros2-robot-programming](https://github.com/sean237333/ros2-robot-programming)
